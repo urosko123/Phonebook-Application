@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddContactFragment"
+    android:id="@+id/fragmentAddContactlayout">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/identerName"
+            android:text="Name: "
+            android:textSize="10sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginStart="15dp">
+        </com.google.android.material.textfield.TextInputEditText>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text=" Last Name: "
+            android:textSize="10sp"
+            android:id="@+id/identerLastName"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/identerName">
+
+        </com.google.android.material.textfield.TextInputEditText>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/identerNumber"
+            android:text="Number: "
+            android:textSize="10sp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/identerLastName">
+
+        </com.google.android.material.textfield.TextInputEditText>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add contact"
+            android:id="@+id/buttonAdd"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/identerNumber">
+
+        </Button>
+
+
+
+</RelativeLayout>

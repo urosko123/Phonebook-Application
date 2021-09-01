@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ContactInfoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/headingid"
+        android:layout_height="wrap_content"
+        android:text="Contact information:"
+        android:textSize="25sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+    </TextView>
+
+    <ImageView
+        android:src="@drawable/male_contact_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/contactInfoImageId"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headingid"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:textSize="20sp"
+        android:id="@+id/textNameId"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactInfoImageId"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Name: "
+        android:textSize="20sp"
+        android:id="@+id/textLastNameId"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNameId"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number: "
+        android:textSize="20sp"
+        android:id="@+id/textNumberId"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLastNameId"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEST NAME"
+        android:textSize="20sp"
+        android:id="@+id/inputNameid"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/textNameId"
+        app:layout_constraintTop_toBottomOf="@+id/contactInfoImageId"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEST LAST NAME"
+        android:textSize="20sp"
+        android:id="@+id/inputLastNameid"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/textLastNameId"
+        app:layout_constraintTop_toBottomOf="@+id/inputNameid"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0123456789"
+        android:textSize="20sp"
+        android:id="@+id/inputNumberid"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/textNumberId"
+        app:layout_constraintTop_toBottomOf="@+id/inputLastNameid"
+        ></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

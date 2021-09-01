@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="600dp"
+      android:id="@+id/mainactivityframeid"/>
+
+  <androidx.fragment.app.FragmentContainerView
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      app:navGraph="@navigation/nav_graph">
+
+  </androidx.fragment.app.FragmentContainerView>
+
+
+  <Button
+      android:clickable="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/mainAddbtn"
+      android:layout_alignParentBottom="true"
+      android:text="ADD NEW"></Button>
+
+  <Button
+      android:clickable="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/mainAllListbtn"
+      android:layout_alignParentBottom="true"
+      android:text="LIST ALL"
+      android:layout_alignParentRight="true">
+  </Button>
+
+</RelativeLayout>
